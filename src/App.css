@@ -1,38 +1,264 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --colorred: #ff5955;
+  --colorblack: #2b2927;
+  --colorblack2: #23201e;
+  --colorwhite: #e5e1e1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+/* work-section */
+.work-section {
+  background-color: var(--colorblack2);
+  padding: 40px 15px;
+  padding-bottom: 70px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.work-title {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.work-title a {
+  display: block;
+  margin-top: 50px;
+  color: var(--colorred);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.work-items {
+  padding-bottom: 5px;
+  margin: 10px 5px;
+}
+
+.work-img {
+  position: relative;
+}
+
+.work-hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2927e1;
+  color: var(--colorred);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+/* contact-from */
+.contact-color {
+  background-color: var(--colorblack);
+  padding-bottom: 80px;
+}
+
+.contact-title {
+  padding: 20px;
+  color: white;
+}
+
+.contact-title h1 {
+  font-size: 70px;
+  line-height: 1;
+  color: var(--colorred);
+  margin-bottom: 25px;
+}
+
+.contact-title h2 {
+  text-align: center;
+  color: var(--colorred);
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.contact-title p:last-child {
+  text-align: center;
+}
+
+.contact-from {
+  width: 100%;
+  padding: 20px;
+}
+
+.contact-from input,
+textarea {
+  width: 100%;
+  margin: 30px auto;
+  padding: 5px;
+  border-bottom: 1px solid var(--colorwhite);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: var(--colorblack);
+  color: white;
+}
+
+.contact-from input[type=email],
+[type=number],
+textarea {
+  outline: none;
+}
+
+.contact-from input[type=submit] {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--colorred);
+  border-bottom: none;
+}
+
+.contact-from input[type=text]:focus {
+  border-top: 1px solid var(--colorblack);
+  outline: none;
+}
+
+/* about */
+.about-color {
+  background-color: var(--colorblack);
+  padding-bottom: 80px;
+}
+
+.about {
+  width: 70%;
+  margin: auto;
+}
+
+.about-title {
+  text-align: center;
+  color: white;
+  padding: 60px 0px;
+}
+
+.about-title h1 {
+  font-size: 35px;
+}
+
+.about-description h2 {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.about-name {
+  color: var(--colorred);
+}
+
+.about-description p {
+  color: white;
+  margin-bottom: 30px;
+}
+
+/* footer */
+footer {
+  padding: 25px;
+  background-color: var(--colorblack);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid var(--colorred);
+}
+
+footer a {
+  color: var(--colorred);
+}
+
+.monirul {
+  font-size: 300px;
+}
+
+.monirul:hover {
+  transform: skewY(120deg);
+  transform: all 8s;
+}
+
+/* responsive code */
+@media (min-width:1400px) {}
+
+@media (min-width:1200px) {}
+
+
+@media (max-width:992px) {
+
+  .contact-title h1 {
+    font-size: 40px;
+    line-height: 1;
+    color: var(--colorred);
+    margin-bottom: 25px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .about {
+    width: 100%;
+    margin: auto;
+  }
+
+}
+
+@media (max-width:768px) {
+  .about {
+    width: 100%;
+    margin: auto;
+  }
+
+  .about-title h1 {
+    font-size: 24px;
+  }
+
+  .about-description h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:660px) {
+  .contact-title h1 {
+    font-size: 27px;
+    line-height: 1;
+    color: var(--colorred);
+    margin-bottom: 25px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  footer>div {
+    margin: 10px 0;
+  }
+
+  footer>div:nth-child(1) {
+    order: 3;
+  }
+
+  footer>div:nth-child(3) {
+    order: 2;
+  }
+
+  footer>div:nth-child(2) {
+    order: 1;
   }
 }
