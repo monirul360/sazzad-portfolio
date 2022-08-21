@@ -12,7 +12,7 @@ const Animation = () => {
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit laboriosam voluptate voluptatem cupiditate unde magnam assumenda, omnis ducimus ipsum consequuntur.</p>
                         </div>
                         <div className="col-md-6">
-                            <h1 className='monirul'>M</h1>
+                            <h1 className='monirul'>S</h1>
                         </div>
                     </div>
                 </div>

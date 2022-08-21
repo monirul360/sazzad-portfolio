@@ -13,7 +13,7 @@ const Works = () => {
                 <div className="work-title">
                     <h3>Big ideas beautifully crafted by creativity,</h3>
                     <h3>Designer & copywriter, Sazzad Hosen</h3>
-                    <Link to='/'>Start a project</Link>
+                    <Link to='/contact'>Start a project</Link>
                 </div>
 
                 {/* work-article */}

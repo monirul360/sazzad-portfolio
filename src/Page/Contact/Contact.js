@@ -9,9 +9,7 @@ const Contact = () => {
                         <div className="contact-title">
                             <h1>Want me to work on your
                                 project?</h1>
-                            <p>I am available for unlimited consultations and reviews during the creative</p>
-                            <p>process to ensure you receive the product you want.</p>
-                            <h2>Let’s work together on your next project.</h2>
+                            <h2>Let’s work together</h2>
                             <p>Please fill in all the fields and we will reply as soon as possible.</p>
                         </div>
                         <div className="contact-from">
@@ -25,6 +23,8 @@ const Contact = () => {
                             </form>
                         </div>
                     </div>
+
+
                 </div>
             </section>
         </div>
