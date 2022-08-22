@@ -14,10 +14,13 @@
 
 a {
   text-decoration: none;
+  outline: none;
 }
+
 
 p {
   margin-bottom: 0;
+  color: var(--colorwhite) !important;
 }
 
 ul {
@@ -43,6 +46,11 @@ ul {
   margin: 0px 30px;
   color: white;
   outline: none;
+}
+
+.nav-item a:focus {
+  color: var(--colorred) !important;
+  font-weight: bold
 }
 
 .nav-item a:last-child {
@@ -94,6 +102,10 @@ ul {
 }
 
 .work-hover {
+  display: none;
+}
+
+.work-hover:hover {
   width: 100%;
   height: 100%;
   display: flex;
@@ -104,7 +116,19 @@ ul {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
+}
+
+.work-content :hover~.work-hover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2927e1;
+  color: var(--colorred);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* contact-from */
@@ -257,21 +281,25 @@ footer a {
   color: var(--colorred);
   font-weight: 700;
   font-size: 7rem;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
 }
 
 .hero p {
   color: white;
   font-size: 24px;
-  line-height: 2;
+  line-height: 1.5;
   margin-right: 40px;
+  margin-bottom: 20px;
 }
 
 .hero .see-link a,
 .hero .see-link link {
   color: var(--colorred);
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 400;
+  display: block;
+  margin-bottom: 80px;
+  text-align: left;
 }
 
 .see-link span {
@@ -287,7 +315,6 @@ footer a {
 
 .brand {
   background: var(--colorblack);
-  padding: 140px 0px;
 }
 
 .brand .brand-text {
@@ -304,7 +331,9 @@ footer a {
 
 .brand .brand-icon {
   position: relative;
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brand .brand-icon span {
@@ -383,11 +412,11 @@ footer a {
 }
 
 .testimonial .tittle h2 {
-  color: #ffffff;
+  color: white;
   position: absolute;
   transform: rotate(-90deg);
   font-weight: bold;
-  font-size: 2.2em;
+  font-size: 2.1em;
 }
 
 .testimonial .testimonial-content {
@@ -414,7 +443,7 @@ footer a {
 }
 
 .testimonial .carousel-button {
-  margin-top: 75px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
 }
@@ -469,6 +498,7 @@ footer a {
 @media (min-width: 992px) {
   .hero {
     padding: 40px 0px;
+    text-align: left;
   }
 
   .services {
@@ -501,7 +531,7 @@ footer a {
   }
 
   .testimonial .carousel-button {
-    margin-top: 100px;
+    margin-top: 80px;
   }
 }
 
@@ -510,10 +540,6 @@ footer a {
     margin: 30px;
   }
 
-  .brand {
-    padding: 100px 0px;
-    text-align: left;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -522,9 +548,6 @@ footer a {
     width: 45%;
   }
 
-  .brand {
-    padding: 40px 0;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -536,22 +559,25 @@ footer a {
     margin: 30px;
   }
 
-  .brand {
-    padding: 40px 0;
-  }
-
   .brand .brand-text h2 {
     font-size: 6em;
   }
 }
 
 @media only screen and (max-width: 767px) {
+  .navbar {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .hero h1 {
     font-size: 6rem;
+    text-align: left;
   }
 
   .hero p {
     font-size: 24px;
+    text-align: left;
   }
 
   .services .services-item .services-box {
@@ -588,11 +614,12 @@ footer a {
 
 @media only screen and (max-width: 576px) {
   .hero {
-    text-align: center;
+    text-align: left;
   }
 
   .hero h1 {
     font-size: 3rem;
+    text-align: left;
   }
 
   .hero p {
@@ -630,11 +657,6 @@ footer a {
 
 
 @media (max-width:992px) {
-
-  .brand {
-    padding: 40px 0;
-  }
-
   .contact-title h1 {
     font-size: 30px;
     line-height: 1;
@@ -650,7 +672,6 @@ footer a {
     width: 100%;
     margin: auto;
   }
-
 }
 
 @media (max-width:768px) {
@@ -714,8 +735,6 @@ footer a {
   footer>div:nth-child(2) {
     order: 1;
   }
-
-
 }
 
 @media (max-width:660px) {

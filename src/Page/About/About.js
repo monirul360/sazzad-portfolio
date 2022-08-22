@@ -39,7 +39,7 @@ const About = () => {
                         </div>
                     </div>
                     <br /><br /><br />
-                    <Link to='/'>
+                    <Link to='/work'>
                         <div className="about-portflow">
                             <div>
                                 <p>See Portfolio</p>

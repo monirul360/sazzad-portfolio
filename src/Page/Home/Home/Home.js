@@ -21,7 +21,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div class="see-link mt-3 mt-md-5">
-                        <Link to="/"><span>See my works</span> <svg xmlns="http://www.w3.org/2000/svg" width="80" height="50" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <Link to="/work"><span>See my works</span> <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                         </svg> </Link>
                     </div>
@@ -37,7 +37,7 @@ const Home = () => {
                         </div>
                         <div class="col-12 col-lg-6 brand-icon">
                             <div class="brand-item">
-                                <img className='img-fluid' src={home} alt="" />
+                                <img src={home} alt="" />
                             </div>
                         </div>
                     </div>
@@ -115,7 +115,7 @@ const Home = () => {
                     <div class="row">
                         <div class="col-12 col-md-2">
                             <div class="tittle">
-                                <h2>Client Testimonials</h2>
+                                <h2 className='mb-5 pb-5'>Reviews</h2>
                             </div>
                         </div>
                         <div class="col-12 col-md-10">

@@ -21,7 +21,7 @@ const Works = () => {
                     <div className="container">
                         <div className="row">
                             {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
+                            <div className="col-md-6 col-lg-4 work-content">
                                 <div className="work-items">
                                     <div className='work-img'>
                                         <img className='img-fluid' src={img} alt="" />
