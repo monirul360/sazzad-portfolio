@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../Share/Footer/Footer';
 import photo from './../../image/About/About.jpg';
 const About = () => {
     return (
@@ -53,6 +54,7 @@ const About = () => {
                     </Link>
                 </div>
             </section>
+            <Footer></Footer>
         </div>
     );
 };

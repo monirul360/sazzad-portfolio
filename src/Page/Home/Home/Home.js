@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Footer from '../../Share/Footer/Footer';
 import home from './../../../image/home.png';
 const Home = () => {
     return (
@@ -48,7 +49,7 @@ const Home = () => {
             <section class="services">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-lg-1">
+                        <div class="col-12 col-lg-12">
                             <div class="tittle">
                                 <h2>Services</h2>
                             </div>
@@ -57,12 +58,14 @@ const Home = () => {
                             <div class="row">
                                 <div class="services-item  col-md-6 col-lg-6">
                                     <div class="services-box">
-                                        <h3>LOGO DESIGN</h3>
+                                        <h3>BRAND IDENTITY</h3>
                                         <p>
-                                            My approach to projects is collaborative. I listen and work
-                                            closely with my clients to create beautiful, crafted and
-                                            timeless design solutions, which are unique to each project
-                                            brief.
+                                            I creatively tell the story of who
+                                            you are or define what your
+                                            brand stands for with
+                                            personalized branding that
+                                            reflects personality, builds
+                                            awareness and gains loyalty.
                                         </p>
                                         <span></span>
                                     </div>
@@ -71,17 +74,19 @@ const Home = () => {
                                     <div class="services-box">
                                         <h3>LOGO DESIGN</h3>
                                         <p>
-                                            My approach to projects is collaborative. I listen and work
-                                            closely with my clients to create beautiful, crafted and
-                                            timeless design solutions, which are unique to each project
-                                            brief.
+                                            I will design custom-made
+                                            modern creative eye-catching
+                                            logos for your business that will
+                                            talk about your story and are
+                                            easy to memorize for your
+                                            audience.
                                         </p>
                                         <span></span>
                                     </div>
                                 </div>
                                 <div class="services-item  col-md-6 col-lg-6">
                                     <div class="services-box">
-                                        <h3>LOGO DESIGN</h3>
+                                        <h3>UI DESIGN</h3>
                                         <p>
                                             My approach to projects is collaborative. I listen and work
                                             closely with my clients to create beautiful, crafted and
@@ -93,12 +98,17 @@ const Home = () => {
                                 </div>
                                 <div class="services-item  col-md-6 col-lg-6">
                                     <div class="services-box">
-                                        <h3>LOGO DESIGN</h3>
+                                        <h3>WEB DESIGN</h3>
                                         <p>
-                                            My approach to projects is collaborative. I listen and work
-                                            closely with my clients to create beautiful, crafted and
-                                            timeless design solutions, which are unique to each project
-                                            brief.
+                                            I custom build every website
+                                            in-house ourselves and juice
+                                            each one up with 6 months of
+                                            free web hosting. No templates
+                                            are ever used during the
+
+                                            process.
+                                            <br />
+                                            <br />
                                         </p>
                                         <span></span>
                                     </div>
@@ -113,12 +123,12 @@ const Home = () => {
             <section class="testimonial">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 col-md-2">
+                        <div class="col-12 col-md-12">
                             <div class="tittle">
-                                <h2 className='mb-5 pb-5'>Reviews</h2>
+                                <h2 className='mb-5 pb-5'>CLIENT TESTIMONIALS</h2>
                             </div>
                         </div>
-                        <div class="col-12 col-md-10">
+                        <div class="col-12 col-md-12">
                             {/* tart  carousel */}
                             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
@@ -197,6 +207,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <Footer></Footer>
         </div>
     );
 };

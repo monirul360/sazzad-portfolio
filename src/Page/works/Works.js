@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import img from './../../image/1.jpg';
-import img2 from './../../image/2.jpg';
-import img3 from './../../image/3.jpg';
-import img4 from './../../image/4.jpg';
-import img5 from './../../image/5.jpg';
-import img6 from './../../image/6.jpg';
+import Footer from '../Share/Footer/Footer';
+import Showork from './Showork';
 const Works = () => {
+    const [work, setwork] = useState([]);
+    useEffect(() => {
+        const url = "https://raw.githubusercontent.com/monirul360/test/main/work.json";
+        fetch(url)
+            .then(res => res.json())
+            .then(data => setwork(data))
+    }, [])
     return (
         <div>
             <section className='work-section'>
@@ -20,166 +23,17 @@ const Works = () => {
                 <article>
                     <div className="container">
                         <div className="row">
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4 work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4  work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img2} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img3} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img4} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4  work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img5} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img6} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img2} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img3} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img4} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4  work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img5} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
-                            {/* article-item-start*/}
-                            <div className="col-md-6 col-lg-4   work-content">
-                                <div className="work-items">
-                                    <div className='work-img'>
-                                        <img className='img-fluid' src={img6} alt="" />
-                                        <div className='work-hover'>
-                                            <h3>MONIRUL</h3>
-                                        </div>
-                                    </div>
-                                    <h5 className='lead mt-2'>Coffee Co</h5>
-                                </div>
-                            </div>
-                            {/* article-item-end */}
+                            {
+                                work.map(work => <Showork
+                                    key={work.id}
+                                    work={work}
+                                ></Showork>)
+                            }
                         </div>
                     </div>
                 </article>
             </section>
+            <Footer></Footer>
         </div>
     );
 };

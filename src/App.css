@@ -105,6 +105,10 @@ ul {
   display: none;
 }
 
+.work-hover h3 {
+  font-size: 20px;
+}
+
 .work-hover:hover {
   width: 100%;
   height: 100%;
@@ -198,6 +202,21 @@ textarea {
   outline: none;
 }
 
+.tnx-contact {
+  background-color: var(--colorblack2);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tnx-contact h1 {
+  color: var(--colorred);
+  margin-bottom: 20px;
+}
+
 /* about */
 .about-color {
   background-color: var(--colorblack2);
@@ -213,10 +232,14 @@ textarea {
   text-align: center;
   color: white;
   padding: 60px 0px;
+  text-transform: uppercase;
+  /* display: none; */
 }
 
 .about-title h1 {
-  font-size: 35px;
+  font-size: 40px;
+  line-height: 1.4;
+  font-weight: 600;
 }
 
 .about-description h2 {
@@ -320,6 +343,7 @@ footer a {
 .brand .brand-text {
   background: var(--colorblack);
   text-align: left;
+  text-transform: uppercase
 }
 
 .brand .brand-text h2 {
@@ -365,7 +389,7 @@ footer a {
 }
 
 .services .tittle h2 {
-  color: white;
+  color: var(--colorred);
   font-weight: bold;
   font-size: 2.2em;
 }
@@ -376,13 +400,13 @@ footer a {
 }
 
 .services .content .services-item .services-box h3 {
-  color: var(--colorred);
+  color: white;
   text-align: center;
   font-size: 22px;
+  font-weight: 600;
 }
 
 .services .content .services-item .services-box p {
-  color: #ffffff;
   text-align: center;
   margin: 20px 0px;
   font-size: 14px;
@@ -412,30 +436,28 @@ footer a {
 }
 
 .testimonial .tittle h2 {
-  color: white;
-  position: absolute;
-  transform: rotate(-90deg);
+  color: var(--colorred);
   font-weight: bold;
   font-size: 2.1em;
 }
 
 .testimonial .testimonial-content {
   padding: 50px;
+  background-color: var(--colorwhite);
 }
 
 .testimonial .testimonial-content h3 {
-  color: var(--colorred);
-  text-align: center;
+  text-align: left;
   font-size: 23px;
   font-weight: 500;
 }
 
 .testimonial .testimonial-content p {
-  color: #ffffff;
-  text-align: center;
+  text-align: left;
   margin: 20px 0px;
   font-size: 16px;
   line-height: 25px;
+  color: var(--colorblack2) !important;
 }
 
 .testimonial .carousel-inner {
@@ -489,6 +511,14 @@ footer a {
   color: var(--colorred);
 }
 
+.contactfooter {
+  background-color: var(--colorblack2);
+  color: var(--colorwhite);
+  text-align: center;
+  padding: 40px 0px;
+  border-top: 2px solid var(--colorred);
+}
+
 @media (max-width:992px) {
   .services .services-item .services-box {
     margin: 30px;
@@ -518,8 +548,7 @@ footer a {
   }
 
   .services .tittle h2 {
-    color: #ffffff;
-    transform: rotate(-90deg);
+    color: var(--colorred);
     font-weight: bold;
     font-size: 2.2em;
   }
@@ -595,12 +624,11 @@ footer a {
   }
 
   .testimonial .tittle {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .testimonial .tittle h2 {
     text-align: center;
-    transform: inherit;
   }
 
   .testimonial .carousel-button {

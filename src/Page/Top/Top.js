@@ -6,10 +6,9 @@ const Top = () => {
         <div>
             <nav class="navbar navbar-expand-md px-4">
                 <div class="container-fluid">
-                    <Link class="navbar-brand" to="/">
+                    {/* <Link class="navbar-brand" to="/">
                         <img src={logo} alt="" />
-                    </Link>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    </Link> */}                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon d-flex justify-content-center align-items-center">
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" color='white' width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -21,7 +20,7 @@ const Top = () => {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <Link class="nav-link" aria-current="page" to="/">Home</Link>
+                                <Link class="nav-link" to="/">Home</Link>
                             </li>
                             <li class="nav-item">
                                 <Link class="nav-link" to="/work">Works</Link>
