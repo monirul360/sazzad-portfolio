@@ -3,7 +3,10 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import './App.css';
 import About from './Page/About/About';
 import Contact from './Page/Contact/Contact';
+import Dashboard from './Page/Dashboard/Dashboard';
 import Home from './Page/Home/Home/Home';
+import Login from './Page/Login/Login';
+import Require from './Page/Require/Require';
 // import Nav from './Page/Share/Nav/Nav';
 import Top from './Page/Top/Top';
 import Infowork from './Page/works/Infowork';
@@ -30,6 +33,12 @@ function App() {
           <Route path='/contact' element={<Contact></Contact>}></Route>
           <Route path='/About' element={<About></About>}></Route>
           <Route path='/infowork/:id' element={<Infowork></Infowork>}></Route>
+          <Route path='/login' element={<Login></Login>}></Route>
+          <Route path='/dashboard' element={
+            <Require>
+              <Dashboard></Dashboard>
+            </Require>
+          }></Route>
         </Routes>
       </Wrapper>
     </>
