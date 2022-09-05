@@ -11,8 +11,7 @@ import Dashboard from './Page/Dashboard/Dashboard';
 import Home from './Page/Home/Home/Home';
 import Login from './Page/Login/Login';
 import Require from './Page/Require/Require';
-// import Nav from './Page/Share/Nav/Nav';
-// import Top from './Page/Top/Top';
+import Nav from './Page/Share/Nav/Nav';
 import Infowork from './Page/works/Infowork';
 import Works from './Page/works/Works';
 import View from './Page/Dashboard/View';
@@ -29,8 +28,7 @@ function App() {
 
   return (
     <>
-      {/* <Nav></Nav> */}
-      {/* <Top></Top > */}
+      <Nav></Nav>
       <Wrapper>
         <Routes>
           <Route exact path='/' element={<Home></Home>}></Route>

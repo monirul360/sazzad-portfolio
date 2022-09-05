@@ -31,15 +31,25 @@ const Addwork = () => {
     }
     return (
         <div className='addwork'>
+            <h2>Add Work</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input {...register("firstName", { required: true })} />
-                {errors.firstName?.type === 'required' && "First name is required"}
+                <input
+                    type="text"
+                    placeholder='Title'
+                    {...register("Title", { required: true })}
+                />
 
-                <input {...register("lastName", { required: true })} />
-                {errors.lastName && <p>Last name is required</p>}
-
-                <input {...register("mail", { required: "Email Address is required" })} />
-                <p>{errors.mail?.message}</p>
+                <input
+                    type="text"
+                    placeholder='Hover title'
+                    {...register("Hover", { required: true })}
+                />
+                <textarea
+                    placeholder='Description'
+                    {...register("Description", { required: true })}
+                ></textarea>
+                <input type="file" name="" id="" />
+                {/*  */}
 
                 <input type="submit" />
             </form>
