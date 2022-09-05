@@ -5,14 +5,18 @@ const Infowork = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
     useEffect(() => {
-        const url = 'https://raw.githubusercontent.com/monirul360/test/main/work.json';
+        const url = `http://localhost:5000/items/${id}`;
         fetch(url)
             .then(Res => Res.json())
             .then(data => setItems(data));
     }, []);
     return (
         <div>
-
+            <div className="container">
+                <div className="infowork">
+                    <img src={items.img} alt="" />
+                </div>
+            </div>
         </div>
     );
 };

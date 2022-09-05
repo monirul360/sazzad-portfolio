@@ -54,7 +54,7 @@ const Home = () => {
                                 <h2>Services</h2>
                             </div>
                         </div>
-                        <div class="content  col-lg-11">
+                        <div class="content  col-lg-12">
                             <div class="row">
                                 <div class="services-item  col-md-6 col-lg-6">
                                     <div class="services-box">
@@ -107,8 +107,6 @@ const Home = () => {
                                             are ever used during the
 
                                             process.
-                                            <br />
-                                            <br />
                                         </p>
                                         <span></span>
                                     </div>

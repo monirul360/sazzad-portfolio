@@ -171,6 +171,16 @@ ul {
   top: 0;
 }
 
+/* infowork */
+.infowork {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.infowork img {
+  width: 100%;
+}
+
 /* contact-from */
 .contact-color {
   background-color: var(--colorblack2);
@@ -607,13 +617,7 @@ footer a {
 
 }
 
-@media only screen and (min-width: 1400px) {
-
-  .services .services-item .services-box {
-    width: 45%;
-  }
-
-}
+@media only screen and (min-width: 1400px) {}
 
 @media (min-width: 992px) and (max-width: 1199px) {
   .hero h1 {
@@ -828,6 +832,10 @@ footer a {
   .about {
     width: 100%;
     margin: auto;
+  }
+
+  .infowork {
+    width: 100%;
   }
 }
 

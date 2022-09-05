@@ -5,7 +5,7 @@ import Showork from './Showork';
 const Works = () => {
     const [work, setwork] = useState([]);
     useEffect(() => {
-        const url = "https://raw.githubusercontent.com/monirul360/test/main/work.json";
+        const url = "http://localhost:5000/items";
         fetch(url)
             .then(res => res.json())
             .then(data => setwork(data))

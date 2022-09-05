@@ -8,7 +8,7 @@ const Showork = ({ work }) => {
     }
     return (
 
-        <div onClick={() => handlework(work?.id)} className="col-md-6 col-lg-4 work-content">
+        <div onClick={() => handlework(work?._id)} className="col-md-6 col-lg-4 work-content">
             <div className="work-items">
                 <div className='work-img'>
                     <img className='img-fluid' src={img} alt="" />
