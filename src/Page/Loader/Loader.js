@@ -2,9 +2,10 @@ import React from 'react';
 
 const Loader = () => {
     return (
-        <div>
+
+        <section className='loader-section'>
             <div class="lds-hourglass"></div>
-        </div>
+        </section>
     );
 };
 

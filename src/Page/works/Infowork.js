@@ -15,6 +15,8 @@ const Infowork = () => {
             <div className="container">
                 <div className="infowork">
                     <img src={items.img} alt="" />
+                    <img src={items.img} alt="" />
+                    <img src={items.img} alt="" />
                 </div>
             </div>
         </div>

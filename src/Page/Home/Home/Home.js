@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../Share/Footer/Footer';
 import home from './../../../image/home.png';
+import Nav from './../../Share/Nav/Nav';
 const Home = () => {
     return (
         <div>
+            <Nav></Nav>
             {/* Hero Section  */}
             <section class="hero">
                 <div class="container">

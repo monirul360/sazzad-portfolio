@@ -7,7 +7,7 @@ const Footer = () => {
             <footer>
                 <div>
                     <p>
-                        Copyright &copy; 2020 - Sazzad Hosen
+                        &copy; 2021 - Sazzad Hosen
                     </p>
                 </div>
                 <div>

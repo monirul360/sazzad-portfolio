@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../Share/Footer/Footer';
+import Nav from '../Share/Nav/Nav';
 import photo from './../../image/About/About.jpg';
 const About = () => {
     return (
         <div>
+            <Nav></Nav>
             <section className='about-color'>
                 <div className="container">
                     <div className="about">

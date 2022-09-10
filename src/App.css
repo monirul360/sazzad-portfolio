@@ -87,7 +87,8 @@ ul {
 
 .smaill-nav button {
   padding: 0px 10px;
-  background-color: black;
+  background-color: var(--colorblack);
+  border: none;
 }
 
 .smaill-nav button>div {
@@ -313,17 +314,26 @@ textarea {
   justify-content: center;
   align-items: center;
   border: 1px solid var(--colorred);
-  color: var(--colorred);
   font-size: 16px;
   margin: 40px auto;
 }
 
 .about-portflow>div {
   padding: 10px;
+
 }
 
 .about-portflow>div:last-child {
   border-left: 1px solid var(--colorred);
+}
+
+.about-portflow p {
+  color: var(--colorred) !important;
+}
+
+.about-portflow b {
+  color: var(--colorred) !important;
+
 }
 
 /* footer */
@@ -340,6 +350,9 @@ footer a {
   color: var(--colorred);
 }
 
+footer a:hover {
+  color: var(--colorred);
+}
 
 .hero {
   padding-bottom: 80px;
@@ -470,7 +483,7 @@ footer a {
 .testimonial {
   padding-top: 100px;
   padding-bottom: 75px;
-  background: var(--colorblack2);
+  background: var(--colorblack);
 }
 
 .testimonial .tittle {
@@ -561,7 +574,7 @@ footer a {
   background-color: var(--colorblack2);
   color: var(--colorwhite);
   text-align: center;
-  padding: 40px 0px;
+  padding: 20px 0px;
   border-top: 2px solid var(--colorred);
 }
 
@@ -754,6 +767,14 @@ footer a {
 }
 
 /* loader */
+.loader-section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .lds-hourglass {
   display: inline-block;
   position: relative;
