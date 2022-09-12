@@ -5,15 +5,15 @@ const DashSiteBar = () => {
     return (
         <div>
             <div class="site-bar-dd">
-                <Link to="/"><i class="fa fa-bars"></i><span>Dashboard</span></Link>
+                <Link to="/dashboard"><i class="fa fa-bars"></i><span>Dashboard</span></Link>
             </div>
 
             <div class="site-bar-menu">
                 <ul>
-                    <li><Link to="/dashboard"> <i class="fa fa-eye"></i><span>View Web</span></Link></li>
+                    <li><Link target="_blank" to="/"> <i class="fa fa-eye"></i><span>View Web</span></Link></li>
 
                     <li><Link to="/dashboard/addwork"><i class="fa fa-plus-square"></i><span>Posts</span><b id="posts-bar" class="fa fa-angle-right"></b></Link></li>
-
+                    <li><Link to="/dashboard/AllPosts"><i class="fa fa-plus"></i><span>All Posts</span></Link></li>
                     <li><Link to="/dashboard"> <i class="fa fa-compass"></i><span>Media</span></Link></li>
 
                     <li><Link to="/dashboard"> <i class="fa fa-paste"></i><span>Pages</span><b id="page-bar" class="fa fa-angle-right"></b></Link></li>

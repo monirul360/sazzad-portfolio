@@ -54,9 +54,11 @@ ul {
   outline: none;
 }
 
-.nav-item a:focus {
+
+
+.nav-item ul li a:focus {
   color: var(--colorred) !important;
-  font-weight: bold
+  font-weight: bold !important;
 }
 
 .nav-item a:last-child {
@@ -178,8 +180,19 @@ ul {
   margin: 40px auto;
 }
 
+.infowork h2 {
+  margin-top: 50px;
+}
+
+.infowork p {
+  color: black !important;
+  font-weight: 500;
+  margin: 25px 0px;
+}
+
 .infowork img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /* contact-from */
@@ -653,7 +666,8 @@ footer a:hover {
   }
 
   .hero h1 {
-    font-size: 6rem;
+    font-weight: 600;
+    font-size: 36px;
     text-align: left;
   }
 
@@ -699,7 +713,7 @@ footer a:hover {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 24;
     text-align: left;
   }
 
@@ -830,6 +844,32 @@ footer a:hover {
   background-color: white;
   border: 1px solid black;
   color: black;
+}
+
+.addwork input[type=file] {
+  width: 100%;
+}
+
+.addwork input[type=submit] {
+  width: 95%;
+  background-color: var(--colorred);
+  color: var(--colorwhite);
+  border: none;
+}
+
+/* allposts */
+.allposts {
+  width: 100%;
+}
+
+.allposts table {
+  width: 100%;
+}
+
+.allposts table img {
+  width: 80px;
+  height: 80px;
+
 }
 
 /* responsive code */

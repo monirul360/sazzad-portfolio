@@ -15,12 +15,7 @@ const Home = () => {
                             <h1>SAZZAD HOSEN</h1>
                         </div>
                         <div>
-                            <p>My approach to projects is
-                                collaborative. I listen and work
-                                closely with my clients to create
-                                beautiful, crafted and timeless
-                                design solutions, which are unique
-                                to each project brief.</p>
+                            <p>I collaborate with ambitious and creative professionals and business owners to create a stylish and unique brand identity. My approach to projects is collaborative. I listen and work closely with my clients to create beautiful, crafted and timeless design solutions, which are unique to each project brief</p>
                         </div>
                     </div>
                     <div class="see-link mt-3 mt-md-5">

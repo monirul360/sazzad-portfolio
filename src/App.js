@@ -14,6 +14,7 @@ import Require from './Page/Require/Require';
 import Infowork from './Page/works/Infowork';
 import Works from './Page/works/Works';
 import View from './Page/Dashboard/View';
+import AllPosts from './Page/Dashboard/AllPosts/AllPosts';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
           }>
             <Route index element={<View></View>}></Route>
             <Route path='addwork' element={<Addwork></Addwork>}></Route>
+            <Route path='AllPosts' element={<AllPosts></AllPosts>}></Route>
 
           </Route>
         </Routes>
