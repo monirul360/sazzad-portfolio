@@ -6,7 +6,7 @@ import Managerow from './Managerow';
 const AllPosts = () => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        const url = `http://localhost:5000/items`;
+        const url = `https://desolate-crag-18556.herokuapp.com/items`;
         fetch(url)
             .then(Res => Res.json())
             .then(data => setItems(data));

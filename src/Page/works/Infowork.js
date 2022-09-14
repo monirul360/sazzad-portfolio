@@ -6,7 +6,7 @@ const Infowork = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
     useEffect(() => {
-        const url = `http://localhost:5000/items/${id}`;
+        const url = `https://desolate-crag-18556.herokuapp.com/items/${id}`;
         fetch(url)
             .then(Res => Res.json())
             .then(data => setItems(data));
@@ -32,6 +32,27 @@ const Infowork = () => {
                     <img src={items?.photo8} alt="" />
                     <img src={items?.photo9} alt="" />
                     <img src={items?.photo10} alt="" />
+                    <img src={items?.photo11} alt="" />
+                    <img src={items?.photo12} alt="" />
+                    <img src={items?.photo13} alt="" />
+                    <img src={items?.photo14} alt="" />
+                    <img src={items?.photo15} alt="" />
+                    <img src={items?.photo16} alt="" />
+                    <img src={items?.photo17} alt="" />
+                    <img src={items?.photo18} alt="" />
+                    <img src={items?.photo19} alt="" />
+                    <img src={items?.photo20} alt="" />
+                    <img src={items?.photo21} alt="" />
+                    <img src={items?.photo22} alt="" />
+                    <img src={items?.photo23} alt="" />
+                    <img src={items?.photo24} alt="" />
+                    <img src={items?.photo25} alt="" />
+                    <img src={items?.photo26} alt="" />
+                    <img src={items?.photo27} alt="" />
+                    <img src={items?.photo28} alt="" />
+                    <img src={items?.photo29} alt="" />
+                    <img src={items?.photo30} alt="" />
+
                 </div>
             </div>
         </div>

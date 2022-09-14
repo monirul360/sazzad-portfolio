@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 const Managerow = ({ items, index }) => {
     const { _id, Title, photo1 } = items;
     const handleDelete = () => {
-        fetch(`http://localhost:5000/myitems/${_id}`, {
+        fetch(`https://desolate-crag-18556.herokuapp.com/myitems/${_id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())
