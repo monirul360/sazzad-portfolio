@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../Share/Footer/Footer';
-import Nav from '../Share/Nav/Nav';
 import Showork from './Showork';
 const Works = () => {
     const [work, setwork] = useState([]);
@@ -13,7 +11,6 @@ const Works = () => {
     }, [])
     return (
         <div>
-            <Nav></Nav>
             <section className='work-section'>
                 <div className="work-title">
                     <h3>Big ideas beautifully crafted by creativity,</h3>
@@ -35,7 +32,6 @@ const Works = () => {
                     </div>
                 </article>
             </section>
-            <Footer></Footer>
         </div>
     );
 };
