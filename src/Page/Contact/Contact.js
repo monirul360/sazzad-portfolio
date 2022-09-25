@@ -1,23 +1,26 @@
 import React from 'react';
-import Form from './Form';
+import Form from './../../Page/Contact/Form';
 const Contact = () => {
     return (
         <div>
-            <section className='contact-color'>
-                <div className="container">
-                    <div className="contact">
-                        <div className="contact-title">
-                            <h1>Want me to work on your
-                                project?</h1>
-                            <h2>Let’s work together</h2>
-                            <p>Please fill in all the fields and we will reply as soon as possible.</p>
+            <section className='contact p-5'>
+                <div className="row d-flex justify-content-center align-items-center">
+                    <div className="col-md-6">
+                        <div className='contact-text m-3'>
+                            <h1>
+                                Get in touch
+                            </h1>
+                            <p>I'm available for new projects and collaborations.</p>
+                            <p>Don't hesitate to reach out!</p>
                         </div>
-                        <div className="contact-from">
+                    </div>
+                    <div className="col-md-6">
+                        <div className="contact-from p-3">
                             <Form></Form>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section >
         </div >
     );
 };

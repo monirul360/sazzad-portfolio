@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <section>
                 <div className="hero-section p-5">
-                    <div className="row d-flex justify-content-center align-items-center w-100vh h-100vh">
+                    <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-md-5">
                             <div className="hero-img">
                                 <img src={img} alt="" />

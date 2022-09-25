@@ -14,11 +14,11 @@ function ContactForm() {
     return (
         <>
             <form onSubmit={handleSubmit} autoComplete="off">
+                <label htmlFor="name"><p>Your name *</p></label>
                 <input
                     id='name'
                     name='name'
                     type="text"
-                    placeholder='Your name'
                     required
                 />
                 <ValidationError
@@ -26,11 +26,11 @@ function ContactForm() {
                     field="name"
                     errors={state.errors}
                 />
+                <label htmlFor="email"><p>Your email address *</p></label>
                 <input
                     id='email'
                     name='email'
                     type="email"
-                    placeholder='Email address'
                     required
                 />
                 <ValidationError
@@ -38,33 +38,11 @@ function ContactForm() {
                     field="email"
                     errors={state.errors}
                 />
-                <input
-                    id='number'
-                    name='number'
-                    type="number"
-                    placeholder='Your phone number (Whatsapp, Telegram)'
-                />
-                <ValidationError
-                    prefix="number"
-                    field="number"
-                    errors={state.errors}
-                />
-                <input
-                    id='company'
-                    name='company'
-                    type="text"
-                    placeholder='Company name'
-                    required
-                />
-                <ValidationError
-                    prefix="company"
-                    field="company"
-                    errors={state.errors}
-                />
+
+                <label htmlFor="sms"><p>Your message *</p></label>
                 <textarea
                     id='sms'
                     name='sms'
-                    placeholder='Your message'
                     required
                 >
                 </textarea>
