@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import Showork from './Showork';
+import { Link } from 'react-router-dom';
 const Works = () => {
     const [work, setwork] = useState([]);
     useEffect(() => {
@@ -13,9 +13,7 @@ const Works = () => {
         <div>
             <section className='work-section'>
                 <div className="work-title">
-                    <h3>Big ideas beautifully crafted by creativity,</h3>
-                    <h3>Designer & copywriter, Sazzad Hosen</h3>
-                    <Link to='/contact'>Start a project</Link>
+                    <h2>PORTFOLIO</h2>
                 </div>
 
                 {/* work-article */}
@@ -32,6 +30,9 @@ const Works = () => {
                     </div>
                 </article>
             </section>
+            <div className="work-hire-me">
+                <Link to='/'>Hire me </Link>
+            </div>
         </div>
     );
 };

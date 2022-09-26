@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Nav from '../Share/Nav/Nav';
-
 const Infowork = () => {
     const { id } = useParams();
     const [items, setItems] = useState({});
@@ -10,10 +8,9 @@ const Infowork = () => {
         fetch(url)
             .then(Res => Res.json())
             .then(data => setItems(data));
-    }, []);
+    }, [id]);
     return (
         <div>
-            <Nav></Nav>
             <div className="container">
                 <div className="infowork">
                     <h2>{items?.Title}</h2>

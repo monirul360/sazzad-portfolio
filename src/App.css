@@ -23,6 +23,10 @@
   --colorwhite: #e5e1e1;
 }
 
+body {
+  background-color: #000000;
+}
+
 a {
   text-decoration: none;
   outline: none;
@@ -69,6 +73,45 @@ ul {
 .nav-section p {
   font-size: small;
   line-height: 1.3;
+}
+
+.smail-nav {
+  background-color: #fff;
+  width: 300px;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.smail-nav {
+  display: none;
+}
+
+.smail-nav h2 {
+  position: absolute;
+  top: 35px;
+  right: 40px;
+  color: #000000;
+  font-size: 30px;
+}
+
+.smail-nav ul li {
+  list-style: none;
+  line-height: 3;
+  text-align: center;
+}
+
+.smail-nav ul li a {
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Ranade-Regular';
+  font-weight: bold;
 }
 
 /* hero-section */
@@ -179,17 +222,6 @@ ul {
 }
 
 .about-text p {
-  /* font-family: 'Ranade-Variable';
-  font-family: 'Ranade-VariableItalic';
-  font-family: 'Ranade-Thin';
-  font-family: 'Ranade-ThinItalic';
-  font-family: 'Ranade-Light';
-  font-family: 'Ranade-LightItalic';
-  font-family: 'Ranade-Italic';
-  font-family: 'Ranade-Medium';
-  font-family: 'Ranade-MediumItalic';
-  font-family: 'Ranade-Bold';
-  font-family: 'Ranade-BoldItalic'; */
   font-family: 'Ranade-Regular';
   color: #fff;
 }
@@ -209,10 +241,11 @@ ul {
 
 /* work-section */
 .work-section {
-  background-color: var(--colorblack2);
+  background-color: #000000;
   padding: 40px 15px;
+  padding-top: 10px;
   padding-bottom: 70px;
-  color: white;
+  color: #fff;
 }
 
 .work-title {
@@ -220,22 +253,14 @@ ul {
   margin-bottom: 50px;
 }
 
-.work-title h3 {
-  font-weight: 600;
-  line-height: 1.2;
+.work-title h2 {
+  font-family: 'Ranade-Medium';
 }
 
-.work-title a {
-  display: block;
-  margin-top: 50px;
-  color: var(--colorred);
-  font-size: 24px;
-  font-weight: 500;
-}
+
 
 .work-items {
-  padding-bottom: 5px;
-  margin: 10px 5px;
+  margin: 15px;
 }
 
 .work-items h5 {
@@ -286,6 +311,22 @@ ul {
   top: 0;
 }
 
+.work-hire-me a {
+  width: 120px;
+  display: block;
+  padding: 5px 25px;
+  background-color: #ffff;
+  color: #000000;
+  margin-right: 25px;
+  font-family: 'Ranade-Regular';
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  left: 42%;
+  z-index: 99;
+  box-shadow: 2px 2px 7px rgba(12, 12, 12, 0.404);
+}
+
 /* infowork */
 .infowork {
   width: 80%;
@@ -294,12 +335,14 @@ ul {
 
 .infowork h2 {
   margin-top: 50px;
+  color: #FFF;
+  font-family: 'Ranade-Medium';
 }
 
 .infowork p {
-  color: black !important;
-  font-weight: 500;
+  color: #fff !important;
   margin: 25px 0px;
+  font-family: 'Ranade-Regular';
 }
 
 .infowork img {
@@ -621,6 +664,20 @@ ul {
 }
 
 @media (max-width:769px) {
+
+  /*  */
+  .smail-nav {
+    background-color: #FFF;
+    width: 80%;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* hero-section */
   .hero-section {

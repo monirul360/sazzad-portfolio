@@ -15,7 +15,7 @@ const Showork = ({ work }) => {
                         <h3>{work?.Hover}</h3>
                     </div>
                 </div>
-                <h5 className='lead mt-2'>{work?.Title}</h5>
+                {/* <h5 className='lead mt-2'>{work?.Title}</h5> */}
             </div>
         </div>
     );
