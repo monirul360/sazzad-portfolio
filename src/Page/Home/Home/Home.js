@@ -1,10 +1,12 @@
 import React from 'react';
 import img from './../../../image/About/sazzad.jpg';
 import { Link } from 'react-router-dom';
+import Nav from '../../Share/Nav/Nav';
 const Home = () => {
     return (
         <div>
             <section>
+                <Nav></Nav>
                 <div className="hero-section p-5">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-md-5">
@@ -22,15 +24,15 @@ const Home = () => {
                                 </h1>
                             </div>
                             <div className="hero-button">
-                                <Link to='/'>Portfolio</Link>
-                                <Link to='/'>Hire me</Link>
+                                <Link to='/work'>Portfolio</Link>
+                                <Link to='/contact'>Hire me</Link>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     );
 }
 

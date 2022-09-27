@@ -15,7 +15,6 @@ import Infowork from './Page/works/Infowork';
 import Works from './Page/works/Works';
 import View from './Page/Dashboard/View';
 import AllPosts from './Page/Dashboard/AllPosts/AllPosts';
-import Nav from './Page/Share/Nav/Nav';
 
 function App() {
 
@@ -30,7 +29,6 @@ function App() {
   return (
     <>
       <Wrapper>
-        <Nav></Nav>
         <Routes>
           <Route exact path='/' element={<Home></Home>}></Route>
           <Route path='/work' element={<Works></Works>}></Route>

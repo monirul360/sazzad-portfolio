@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Nav from '../Share/Nav/Nav';
 import about from './../../image/About/sazzad.jpg'
 const About = () => {
     return (
         <div>
+            <Nav></Nav>
             <section className='about-section p-5'>
                 <div className="about">
                     <div className="row d-flex justify-content-center align-items-center">
@@ -35,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        </div >
     );
 };
 

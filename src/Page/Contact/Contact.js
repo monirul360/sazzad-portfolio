@@ -1,8 +1,10 @@
 import React from 'react';
+import Nav from '../Share/Nav/Nav';
 import Form from './../../Page/Contact/Form';
 const Contact = () => {
     return (
         <div>
+            <Nav></Nav>
             <section className='contact p-5'>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-6">

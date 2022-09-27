@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Showork from './Showork';
 import { Link } from 'react-router-dom';
+import Nav from '../Share/Nav/Nav';
 const Works = () => {
     const [work, setwork] = useState([]);
     useEffect(() => {
@@ -11,6 +12,7 @@ const Works = () => {
     }, [])
     return (
         <div>
+            <Nav></Nav>
             <section className='work-section'>
                 <div className="work-title">
                     <h2>PORTFOLIO</h2>
@@ -31,7 +33,7 @@ const Works = () => {
                 </article>
             </section>
             <div className="work-hire-me">
-                <Link to='/'>Hire me </Link>
+                <Link to='/contact'>Hire me </Link>
             </div>
         </div>
     );
