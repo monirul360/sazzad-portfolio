@@ -7,11 +7,11 @@ const Home = () => {
         <div>
             <section>
                 <Nav></Nav>
-                <div className="hero-section p-5">
+                <div className="hero-section container">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-12 col-md-5">
-                            <div className="hero-img">
-                                <img src={img} alt="" />
+                            <div className="hero-img m-3">
+                                <img className='img-fluid' src={img} alt="" />
                             </div>
                         </div>
                         <div className="col-12 col-md-7">
@@ -26,7 +26,6 @@ const Home = () => {
                             <div className="hero-button">
                                 <Link to='/work'>Portfolio</Link>
                                 <Link to='/contact'>Hire me</Link>
-
                             </div>
                         </div>
                     </div>

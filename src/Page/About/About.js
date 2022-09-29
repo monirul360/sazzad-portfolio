@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <Nav></Nav>
-            <section className='about-section p-5'>
+            <section className='about-section container'>
                 <div className="about">
                     <div className="row d-flex justify-content-center align-items-center">
                         <div className="col-md-5">

@@ -15,7 +15,7 @@ const Nav = () => {
     };
     return (
         <div>
-            <section className='nav-section p-5'>
+            <section className='nav-section container'>
                 <div className="nav">
                     <Link style={{ color: '#fff' }} to='/'>
                         <div className="d-flex justify-content-center  align-items-center">

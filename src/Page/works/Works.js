@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Nav from '../Share/Nav/Nav';
 const Works = () => {
     const [work, setwork] = useState([]);
+    const workreverse = work?.reverse();
     useEffect(() => {
         const url = "https://desolate-crag-18556.herokuapp.com/items";
         fetch(url)
@@ -21,7 +22,7 @@ const Works = () => {
                 {/* work-article */}
                 <article>
                     <div className="container">
-                        <div className="row">
+                        <div className="monirul">
                             {
                                 work.map(work => <Showork
                                     key={work.id}

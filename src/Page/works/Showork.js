@@ -6,18 +6,21 @@ const Showork = ({ work }) => {
         Navigate(`/infowork/${id}`);
     }
     return (
-
-        <div onClick={() => handlework(work?._id)} className="col-md-6 col-lg-4 work-content">
-            <div className="work-items">
-                <div className='work-img'>
-                    <img className='img-fluid' src={work?.photo1} alt="" />
-                    <div className='work-hover'>
-                        <h3>{work?.Hover}</h3>
+        <>
+            <div onClick={() => handlework(work?._id)} className="work-content">
+                <div className="work-items">
+                    <div className='work-img'>
+                        <img className='img-fluid' src={work?.photo1} alt="" />
+                        <div className='work-hover'>
+                            <h3>{work?.Hover}</h3>
+                        </div>
                     </div>
                 </div>
-                {/* <h5 className='lead mt-2'>{work?.Title}</h5> */}
             </div>
-        </div>
+            {/* <div className="figure">
+                <img className='img-fluid' src={work.photo1} alt="" />
+            </div> */}
+        </>
     );
 };
 

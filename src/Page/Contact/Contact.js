@@ -5,7 +5,7 @@ const Contact = () => {
     return (
         <div>
             <Nav></Nav>
-            <section className='contact p-5'>
+            <section className='contact container'>
                 <div className="row d-flex justify-content-center align-items-center">
                     <div className="col-md-6">
                         <div className='contact-text  m-4'>
@@ -13,8 +13,8 @@ const Contact = () => {
                                 Get in touch
                             </h1>
                             <p>I'm available for new projects and collaborations.
-                                Don't hesitate to reach out!
                             </p>
+                            <p>Don't hesitate to reach out!</p>
 
                         </div>
                     </div>
