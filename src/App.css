@@ -401,21 +401,22 @@ ul {
   top: 0;
 }
 
+.work-hire-me {
+  text-align: center;
+  margin: auto;
+}
+
 .work-hire-me a {
-  width: 120px;
-  display: block;
-  padding: 5px 25px;
+  padding: 7px 25px;
   background-color: #ffff;
   color: #000000;
-  margin-right: 25px;
   font-family: 'Ranade-Regular';
   font-weight: bold;
-  position: fixed;
   bottom: 30px;
-  left: calc(43%);
   z-index: 99;
   box-shadow: 2px 2px 7px rgba(12, 12, 12, 0.404);
 }
+
 
 .monirul {
   column-count: 3;
@@ -428,7 +429,6 @@ ul {
   grid-template-rows: 1fr auto;
   break-inside: avoid;
   margin-bottom: 5px;
-  background-color: orangered;
 }
 
 .work-items>img {
@@ -741,9 +741,5 @@ ul {
 @media (max-width:669px) {
   .contact-text h1 {
     font-size: 30px;
-  }
-
-  .work-hire-me a {
-    left: calc(40%);
   }
 }

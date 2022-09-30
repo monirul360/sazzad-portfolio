@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Nav from '../Share/Nav/Nav';
 const Works = () => {
     const [work, setwork] = useState([]);
-    const workreverse = work?.reverse();
+    const workreverse = work.reverse();
     useEffect(() => {
         const url = "https://desolate-crag-18556.herokuapp.com/items";
         fetch(url)
@@ -24,7 +24,7 @@ const Works = () => {
                     <div className="container">
                         <div className="monirul">
                             {
-                                work.map(work => <Showork
+                                workreverse.map(work => <Showork
                                     key={work.id}
                                     work={work}
                                 ></Showork>)
@@ -33,8 +33,11 @@ const Works = () => {
                     </div>
                 </article>
             </section>
-            <div className="work-hire-me">
-                <Link to='/contact'>Hire me </Link>
+            <div className="container">
+                <div className="work-hire-me max-auto 
+fixed-bottom mb-4">
+                    <Link to='/contact'>Hire me </Link>
+                </div>
             </div>
         </div>
     );
