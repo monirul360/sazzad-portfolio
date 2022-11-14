@@ -2,10 +2,9 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../firebase';
-
+import sazzad from './../../image/About/sazzad.jpg';
 const DashtopBar = () => {
     const [user] = useAuthState(auth);
-    console.log(user.photoURL);
     return (
         <div>
             <section id="top-bar">
@@ -26,7 +25,7 @@ const DashtopBar = () => {
                         </div>
 
                         <div class="admin-photo">
-                            <img src={user.photoURL} alt="" />
+                            <img src={sazzad} alt="" />
                         </div>
 
                     </div>

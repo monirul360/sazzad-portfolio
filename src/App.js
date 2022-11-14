@@ -38,9 +38,7 @@ function App() {
           <Route path='/login' element={<Login></Login>}></Route>
           <Route path='/addwork' element={<Addwork></Addwork>}></Route>
           <Route path='/dashboard' element={
-            <Require>
-              <Dashboard></Dashboard>
-            </Require>
+            <Dashboard></Dashboard>
           }>
             <Route index element={<View></View>}></Route>
             <Route path='addwork' element={<Addwork></Addwork>}></Route>
